@@ -1,0 +1,21 @@
+
+Follow the Steps
+1.install pythons latest version
+2.python -m pip install --upgrade pip
+3.pip install behave
+4.pip install requests
+5.pip install gherkin-official
+6.pip install allure-behave
+
+**update the value of environment(dev,staging,production) on which you want to perform the testing
+Run the following commands in terminal
+behave -D environment=dev -o reports/scenarioReports.txt > reports/outputfile.txt
+
+for generating allure reports
+use following commands in terminal
+behave --no-capture -D environment=dev -f allure_behave.formatter:AllureFormatter -o reports\allure_reports
+
+-Download the allure zip file
+-extract it and go to the bin folder and open command prompt
+run the command
+allure serve "add the path where allure_reports are stored"

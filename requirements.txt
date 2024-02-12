@@ -1,0 +1,6 @@
+pip==21.3.1
+behave==1.2.6
+requests==2.27.1   
+allure-behave==2.13.2
+gherkin-official==24.1.0
+testrail~=0.3.15
